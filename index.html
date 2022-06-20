@@ -8,6 +8,7 @@
     <title>🐷 Pig Game 🎲</title>
   </head>
   <body>
+    <button class="btn btn--rules">✍️Rules</button>
     <main>
       <section class="player player--0 player--active">
         <h2 class="name" id="name--0">Player 1</h2>
@@ -16,7 +17,7 @@
           <p class="current-label">Current</p>
           <p class="current-score" id="current--0">0</p>
         </div>
-      </section> 
+      </section>
       <section class="player player--1">
         <h2 class="name" id="name--1">Player 2</h2>
         <p class="score" id="score--1">24</p>
@@ -31,7 +32,23 @@
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
     </main>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1 class="rules-title">Rules</h1>
+      <ol class="rules-list">
+        <li>
+          Players take turns to roll a single dice as many times as they wish,
+          adding all roll results to a running total, but losing their gained
+          score for the turn if they roll a 1.
+        </li>
+        <li>First to a score of 100 or higher wins.</li>
+        <li>
+          Pressing the hold button will add the current rolled amount to the
+          player's total score.
+        </li>
+      </ol>
+    </div>
+    <div class="overlay hidden"></div>
     <script src="script.js"></script>
   </body>
 </html>
-
