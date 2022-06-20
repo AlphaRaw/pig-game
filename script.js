@@ -14,7 +14,7 @@ const btnHold = document.querySelector('.btn--hold');
 const btnRules = document.querySelector('.btn--rules');
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
-const btnCloseModal = document.querySelector('.close-modal')
+const btnCloseModal = document.querySelector('.close-modal');
 
 let scores, currentScore, activePlayer, playing;
 
